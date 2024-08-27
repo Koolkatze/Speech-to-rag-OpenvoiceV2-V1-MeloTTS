@@ -37,7 +37,7 @@ HOW TO INSTALL:
 14. download desired languages for MeloTTS from https://huggingface.co/myshell-ai
 15. extract folder to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/MeloTTS
 16. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
-17. pip install requirements.txt
+17. pip install -r requirements.txt
 18. pip install -e .
 19. download checkpoints from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip
 20. extract .zip to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
