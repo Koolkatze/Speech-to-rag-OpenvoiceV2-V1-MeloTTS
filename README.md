@@ -25,7 +25,7 @@ HOW TO INSTALL:
 2. git clone https://github.com/Koolkatze/Speech-to-rag-OpenvoiceV2-V1-MeloTTS.git
 3. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS
 4. pip install -r requirements.txt
-5. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+5. Take a shower...
 6. mkdir modules
 7. cd modules
 8. download MeloTTS from https://github.com/myshell-ai/MeloTTS.git
@@ -49,10 +49,10 @@ HOW TO INSTALL:
 26. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
 27. Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
 29. Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 357
-
-30. start LM studio server (or similar) in your PC. you can change to other program by substituting its localhost in: http://localhost:1234/v1 line 28 for any other local LLM host.
-31. Edit chatbot1.txt to create a Chat's Character personality.
-32. Edit vault.txt to create Chats Knowledge about yourself (or user).
+30. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+31. start LM studio server (or similar) in your PC. you can change to other program by substituting its localhost in: http://localhost:1234/v1 line 28 for any other local LLM host.
+32. Edit chatbot1.txt to create a Chat's Character personality.
+33. Edit vault.txt to create Chats Knowledge about yourself (or user).
 34. Edit main.py and add a # before vs.user_chatbot_conversation() to turn off Openvoice-v1 or add a # vs.user_chatbot_conversation2() to turn off OpenVoice-v2
 35. run: python main.py
 
