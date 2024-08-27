@@ -62,9 +62,7 @@ All OpenVoices will clone the reference voice you introduce at start.
 
 ROADMAP:
 
-pip install ffmpeg
-Run a docker in the program to try and use LMStudio instead of OLlama (possible alternative).
-Change LMStudio for OLlama to use its Web UI.
-Read OLlamas output or Chatbot's answer inside OLlama and stream the text string to Frames by Brilliant Labs by using Brilliant Labs NOA Assistant and OLlama Web UI sharing the string info.
-Using all the sensors inside Frames by Brilliant Labs (Camera, Movement/Gravity, Tap Buttons) to control and share info with OLlama and enhance the chatting experience.
-Implementing video stream through the glasses camera to the preferred LLM inside OLlama or LMStudio (with Docker) to make a ChatGPT type of chatting with any opensource model.
+1. Change LMStudio for OLlama to use its Web UI or use a Docker file to use LMStudio from anywhere.
+2. Read OLlamas output or Chatbot's answer inside OLlama and stream the text string to Frames by Brilliant Labs by using Brilliant Labs NOA Assistant and OLlama Web UI sharing the string info.
+3. Using all the sensors inside Frames by Brilliant Labs (Camera, Movement/Gravity, Tap Buttons) to control and share info with OLlama and enhance the chatting experience.
+4. Implementing video stream through the glasses camera to the preferred LLM inside OLlama or 5. LMStudio (with Docker) to make a ChatGPT type of chatting with any opensource model.
