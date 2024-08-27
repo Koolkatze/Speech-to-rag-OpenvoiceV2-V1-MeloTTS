@@ -16,42 +16,43 @@ If an ERROR like this occurs: "Could not load library cublas64_12.dll.": Go to C
 
 HOW TO INSTALL:
 
-Use Allways Windosws PowerShell Terminal
+0. Use Allways Windosws PowerShell Terminal
 
-pip install ffmpeg
-git clone https://github.com/Koolkatze/Speech-to-rag-OpenvoiceV2-V1-MeloTTS.git
-cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS
-pip install -r requirements.txt
-pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
-mkdir modules
-cd modules
-download MeloTTS from https://github.com/myshell-ai/MeloTTS.git
-download OpenVoice from https://github.com/myshell-ai/OpenVoice.git
-cd MeloTTS
-pip install -r requirements.txt
-pip install -e .
-python -m unidic download
-download desired languages for MeloTTS from https://huggingface.co/myshell-ai
-extract folder to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/MeloTTS
-cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
-pip install requirements.txt
-pip install -e .
-download checkpoints from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip
-extract .zip to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
-In voice.py set your reference PATHs 
-OpenVoice/checkpoints_v2 on line 34
-Your-Voice-to-Clone.mp3 on line 281
-Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 307
-Your-Voice-to-Clone.mp3 on line 326
-Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
-Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
-Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 357
- 
-start LM studio server (or similar) in your PC. you can change to other program by substituting its localhost in: http://localhost:1234/v1 line 28 for any other local LLM host.
-Edit chatbot1.txt to create a Chat's Character personality.
-Edit vault.txt to create Chats Knowledge about yourself (or user).
-Edit main.py and add a # before vs.user_chatbot_conversation() to turn off Openvoice-v1 or add a # vs.user_chatbot_conversation2() to turn off OpenVoice-v2
-run: python main.py
+1. pip install ffmpeg
+2. git clone https://github.com/Koolkatze/Speech-to-rag-OpenvoiceV2-V1-MeloTTS.git
+3. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS
+4. pip install -r requirements.txt
+5. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+6. mkdir modules
+7. cd modules
+8. download MeloTTS from https://github.com/myshell-ai/MeloTTS.git
+9. download OpenVoice from https://github.com/myshell-ai/OpenVoice.git
+10. cd MeloTTS
+11. pip install -r requirements.txt
+12. pip install -e .
+13. python -m unidic download
+14. download desired languages for MeloTTS from https://huggingface.co/myshell-ai
+15. extract folder to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/MeloTTS
+16. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
+17. pip install requirements.txt
+18. pip install -e .
+19. download checkpoints from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip
+20. extract .zip to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
+21. In voice.py set your reference PATHs 
+22. OpenVoice/checkpoints_v2 on line 34
+23. Your-Voice-to-Clone.mp3 on line 281
+24. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 307
+25. Your-Voice-to-Clone.mp3 on line 326
+26. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
+27. Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
+29. Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 357
+
+30. start LM studio server (or similar) in your PC. you can change to other program by substituting its localhost in: http://localhost:1234/v1 line 28 for any other local LLM host.
+31. Edit chatbot1.txt to create a Chat's Character personality.
+32. Edit vault.txt to create Chats Knowledge about yourself (or user).
+34. Edit main.py and add a # before vs.user_chatbot_conversation() to turn off Openvoice-v1 or add a # vs.user_chatbot_conversation2() to turn off OpenVoice-v2
+35. run: python main.py
+
 You can see how much time each one lasts and use the one that suits better your needs.
 
 All OpenVoices will clone the reference voice you introduce at start.
