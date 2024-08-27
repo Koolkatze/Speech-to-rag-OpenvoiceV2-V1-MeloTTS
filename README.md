@@ -40,12 +40,12 @@ download checkpoints from https://myshell-public-repo-host.s3.amazonaws.com/open
 extract .zip to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
 In voice.py set your reference PATHs 
 OpenVoice/checkpoints_v2 on line 34
-Your-Voice-to-Clone.mp3 on line 208
-Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 234
-Your-Voice-to-Clone.mp3 on line 253
-Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 255
-Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 284
-Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 284
+Your-Voice-to-Clone.mp3 on line 281
+Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 307
+Your-Voice-to-Clone.mp3 on line 326
+Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
+Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
+Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 357
  
 start LM studio server (or similar) in your PC. you can change to other program by substituting its localhost in: http://localhost:1234/v1 line 28 for any other local LLM host.
 Edit chatbot1.txt to create a Chat's Character personality.
