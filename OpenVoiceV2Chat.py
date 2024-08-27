@@ -270,7 +270,8 @@ class VoiceService:
             print(PINK + "Glitch:" + RESET_COLOR)
             self._chatbot_response2 = self.chatgpt_streamed(user_input, system_message, conversation_history, "Chatbot", vault_embeddings_tensor, vault_content, model)
             conversation_history.append({"role": "assistant", "content": self._chatbot_response2})
-            self._prompt2 = self._chatbot_response2
+            self._prompt2 = self.full_response
+            #self._chatbot_response2
             start_time = time.time()
             VoiceService.openvoice_v2(self)
             end_time = time.time()
@@ -294,7 +295,7 @@ class VoiceService:
         src_path = f'{self._output_dir}/tmp.wav'
 
         # Speed is adjustable
-        speed = 1.0
+        speed = 1.3
 
         for language, text in texts.items():
             model = TTS(language='ES', device=self._device)
@@ -316,8 +317,11 @@ class VoiceService:
                     tgt_se=target_se,
                     output_path=save_path,
                     message=encode_message)
-                self.play(save_path)
-
+                
+                play_audio =  self.play(save_path)
+                play_audio
+                # hear_me = VoiceService.record_audio()
+                  
         #if len(self._conversation_history) > 20:
            # self._conversation_history = self._conversation_history[-20:]
 
@@ -359,7 +363,7 @@ class VoiceService:
         src_path = f'{self._output_dir}/tmp.wav'
 
         # Speed is adjustable
-        speed = 1.1
+        speed = 1.3
         model.tts_to_file(text, 3, src_path, speed=speed)
 
         return self.play(src_path) if standalone else src_path
