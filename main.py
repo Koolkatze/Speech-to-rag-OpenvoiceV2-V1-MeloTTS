@@ -1,13 +1,8 @@
-from voice import VoiceService
+from OpenVoiceV2Chat import VoiceService
 import time
 
 vs = VoiceService()
-print("OpenVoice Starting...")
-start_time = time.time()
-#vs.openvoice_v2()
+print("Chat Starting...")
 vs.user_chatbot_conversation()
-end_time = time.time()
-print(f"OpenVoice Execution Time: {end_time - start_time}")
-print("OpenVoice_v2 ended")
-
-
+#vs.user_chatbot_conversation2()
+print("Chat ended")
