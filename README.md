@@ -3,16 +3,16 @@ Speech to Speech with RAG you can use any version of Openvoice in much more lang
 
 REQUIREMENTS:
 
-Windows 10/11
-Python 3.10 https://www.python.org/downloads/release/python-3100/
-CUDA Toolkit 11.8 https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows&target_arch=x86_64 Select windows version and .exe(local).
-ffmpeg installed https://phoenixnap.com/kb/ffmpeg-windows or pip install ffmpeg
-NVIDIA GPU (will prob work with only CPU too)
-microphone
-local LLM setup (default is LM studio but working on OLlama to use WEB UI)
-You might need Pytorch (https://pytorch.org/) (Included in HOW TO INSTALL)
-If an ERROR like this occurs: "Could not load library cudnn_ops_infer64_8.dll. Error code 126" Please make sure cudnn_ops_infer64_8.dll is in your library path!" go to https://github.com/Purfview/whisper-standalone-win/releases/tag/libs download "cuBLAS.and.cuDNN_CUDA11_win_v2.zip take all the files inside .zip (.dll) and move them to your PC's C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin
-If an ERROR like this occurs: "Could not load library cublas64_12.dll.": Go to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin, take cublas64_11.dll make a copy of it and rename it cublas64_12.dll
+1. Windows 10/11
+2. Python 3.10 https://www.python.org/downloads/release/python-3100/
+3. CUDA Toolkit 11.8 https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Windows&target_arch=x86_64 Select windows version and .exe(local).
+4. ffmpeg installed https://phoenixnap.com/kb/ffmpeg-windows or pip install ffmpeg
+5.. NVIDIA GPU (will prob work with only CPU too)
+6. microphone
+7. local LLM setup (default is LM studio but working on OLlama to use WEB UI)
+8. You might need Pytorch (https://pytorch.org/) (Included in HOW TO INSTALL)
+9. If an ERROR like this occurs: "Could not load library cudnn_ops_infer64_8.dll. Error code 126" Please make sure cudnn_ops_infer64_8.dll is in your library path!" go to https://github.com/Purfview/whisper-standalone-win/releases/tag/libs download "cuBLAS.and.cuDNN_CUDA11_win_v2.zip take all the files inside .zip (.dll) and move them to your PC's C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin
+10. If an ERROR like this occurs: "Could not load library cublas64_12.dll.": Go to C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin, take cublas64_11.dll make a copy of it and rename it cublas64_12.dll
 
 HOW TO INSTALL:
 
