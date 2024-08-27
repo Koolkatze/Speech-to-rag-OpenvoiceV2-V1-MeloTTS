@@ -24,34 +24,34 @@ HOW TO INSTALL:
 0. Use Allways Windosws PowerShell Terminal
 
 1. pip install ffmpeg
-2. git clone https://github.com/Koolkatze/Speech-to-rag-OpenvoiceV2-V1-MeloTTS.git
-3. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS
-4. pip install -r requirements.txt
-5. Take a shower...
-6. mkdir modules
-7. cd modules
-8. download MeloTTS from https://github.com/myshell-ai/MeloTTS.git
-9. download OpenVoice from https://github.com/myshell-ai/OpenVoice.git
-10. cd MeloTTS
-11. pip install -r requirements.txt
-12. pip install -e .
-13. python -m unidic download
-14. download desired languages for MeloTTS from https://huggingface.co/myshell-ai
-15. extract folder to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/MeloTTS
-16. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
-17. pip install -r requirements.txt
-18. pip install -e .
-19. download checkpoints from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip
-20. extract .zip to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
-21. In voice.py set your reference PATHs 
-22. OpenVoice/checkpoints_v2 on line 34
-23. Your-Voice-to-Clone.mp3 on line 281
-24. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 307
-25. Your-Voice-to-Clone.mp3 on line 326
-26. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
-27. Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
+2. 30. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+3. git clone https://github.com/Koolkatze/Speech-to-rag-OpenvoiceV2-V1-MeloTTS.git
+4. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS
+5. pip install -r requirements.txt
+6. Take a shower...
+7. mkdir modules
+8. cd modules
+9. download MeloTTS from https://github.com/myshell-ai/MeloTTS.git
+10. download OpenVoice from https://github.com/myshell-ai/OpenVoice.git
+11. cd MeloTTS
+12. pip install -r requirements.txt
+13. pip install -e .
+14. python -m unidic download
+15. download desired languages for MeloTTS from https://huggingface.co/myshell-ai
+16. extract folder to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/MeloTTS
+17. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
+18. pip install -r requirements.txt
+19. pip install -e .
+20. download checkpoints from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip
+21. extract .zip to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
+22. In voice.py set your reference PATHs 
+23. OpenVoice/checkpoints_v2 on line 34
+24. Your-Voice-to-Clone.mp3 on line 281
+25. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 307
+26. Your-Voice-to-Clone.mp3 on line 326
+27. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
+28. Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
 29. Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 357
-30. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 31. start LM studio server (or similar) in your PC. you can change to other program by substituting its localhost in: http://localhost:1234/v1 line 28 for any other local LLM host.
 32. Edit chatbot1.txt to create a Chat's Character personality.
 33. Edit vault.txt to create Chats Knowledge about yourself (or user).
