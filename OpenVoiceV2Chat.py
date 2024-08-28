@@ -270,7 +270,7 @@ class VoiceService:
             print(PINK + "Glitch:" + RESET_COLOR)
             self._chatbot_response2 = self.chatgpt_streamed(user_input, system_message, conversation_history, "Chatbot", vault_embeddings_tensor, vault_content, model)
             conversation_history.append({"role": "assistant", "content": self._chatbot_response2})
-            self._prompt2 = self.full_response
+            self._prompt2 = self._chatbot_response2
             #self._chatbot_response2
             start_time = time.time()
             VoiceService.openvoice_v2(self)
