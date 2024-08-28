@@ -26,7 +26,7 @@ HOW TO INSTALL:
 0. Use Allways Windosws PowerShell Terminal
 - /usr/local/bin/python -m pip install --upgrade pip
 1. pip install ffmpeg
-2. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+2. prepare yourself...
 3. git clone https://github.com/Koolkatze/Speech-to-rag-OpenvoiceV2-V1-MeloTTS.git
 4. cd Speech-to-rag-OpenvoiceV2-V1-MeloTTS
 5. pip install -r requirements.txt
@@ -46,14 +46,15 @@ HOW TO INSTALL:
 19. pip install -e .
 20. download checkpoints from https://myshell-public-repo-host.s3.amazonaws.com/openvoice/checkpoints_v2_0417.zip
 21. extract .zip to Speech-to-rag-OpenvoiceV2-V1-MeloTTS/modules/Openvoice
-22. In voice.py set your reference PATHs 
-23. OpenVoice/checkpoints_v2 on line 34
-24. Your-Voice-to-Clone.mp3 on line 281
-25. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 307
-26. Your-Voice-to-Clone.mp3 on line 326
-27. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
-28. Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
-29. Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 357
+22. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+23. In voice.py set your reference PATHs 
+24. OpenVoice/checkpoints_v2 on line 34
+25. Your-Voice-to-Clone.mp3 on line 281
+26. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/ on line 307
+27. Your-Voice-to-Clone.mp3 on line 326
+28. Your path to modules/OpenVoice/checkpoints_v2/base_speakers/ses/any_of_existent_accents.pth on line 328
+29. Your path to modules/MeloTTS/MeloTTS-[prefered language]/checkpoint.pth on line 357
+30. Your path to modules/MeloTTS/MeloTTS-[prefered language]/config.json on line 357
 31. start LM studio server (or similar) in your PC. you can change to other program by substituting its localhost in: http://localhost:1234/v1 line 28 for any other local LLM host.
 32. Edit chatbot1.txt to create a Chat's Character personality.
 33. Edit vault.txt to create Chats Knowledge about yourself (or user).
