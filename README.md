@@ -24,7 +24,7 @@ REQUIREMENTS:
 HOW TO INSTALL:
 
 0. Use Allways Windosws PowerShell Terminal
-
+- /usr/local/bin/python -m pip install --upgrade pip
 1. pip install ffmpeg
 2. pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 3. git clone https://github.com/Koolkatze/Speech-to-rag-OpenvoiceV2-V1-MeloTTS.git
